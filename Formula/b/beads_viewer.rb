@@ -5,11 +5,6 @@ class BeadsViewer < Formula
   sha256 "8e9e89d0ede35a8abbb88ccd4e04007d08e8ef0be8be12433c13d648296321a5"
   license "MIT"
 
-  livecheck do
-    url :stable
-    regex(/^v?(\d+(?:\.\d+)+)$/i)
-  end
-
   depends_on "go" => :build
 
   def install
